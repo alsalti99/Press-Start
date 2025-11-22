@@ -2,7 +2,7 @@
 
 <div class="highlight">
   <strong>Project Name:</strong> Press Start<br>
-  <strong>Developers:</strong>- Omar Al Salti
+  <strong>Developer:</strong> Omar Al Salti
   <br><strong>Hosted Website link:</strong>
 </div>
 
