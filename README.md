@@ -20,7 +20,7 @@ The website contains multiple themed pages, each covering a specific aspect of g
 - **Timeless Games** – Iconic games that defined generations  
 - **Console Legacy** – Evolution of major gaming consoles  
 - **Pixels on the Go** – Handheld and portable gaming  
-- **Retro Evolve** – a Timeline of Gaming Evolution  
+- **Retro Evolve** – A timeline of Gaming Evolution  
 - **Game Geniuses** – Influential developers and creators  
 - **Fun Facts** – Interesting facts about games and consoles  
 - **Game Challenge!** – Simple interactive game activity  
