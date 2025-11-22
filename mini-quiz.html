@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Gaming Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        header {
+            background-image: url('images/mini-quiz-bg.jpg');
+            background-size: cover;
+            padding: 120px;
+            text-align: center;
+            color: white;
+        }
+
+        nav { background: #444;
+            padding: 10px;
+            text-align: center;
+        
+        }
+
+        nav a { color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main { max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .question {
+            margin-bottom: 30px; 
+        }
+
+        input {
+            padding: 10px;
+            width: 60%;
+            border-radius: 6px;
+            border: 1px solid #aaa;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #444;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mini Gaming Quiz</h1>
+        <p>Type your answers...no cheating >_<!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="timeless-games.html">Timeless Games</a>
+        <a href="console-legacy.html">Console Legacy</a>
+        <a href="pixel-on-the-go.html">Pixels on the Go</a>
+        <a href="retro-evolve.html">Retro Evolve</a>
+        <a href="games-geniuses.html">Game Geniuses</a>
+        <a href="fun-facts.html">Fun Facts</a>
+        <a href="game-challenge.html">Game Challenge!</a>
+        <a href="emoji-quiz.html">Emoji Game</a>
+        <a href="game-dictionary.html">Game Dictionary</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <h2>Try the Quiz!</h2>
+
+        <div class="question">
+            <p>1) What year was the first PlayStation released?</p>
+            <input id="q1" placeholder="Enter your answer...">
+            <button onclick="check('q1', '1994')">Answer!</button>
+        </div>
+
+        <div class="question">
+            <p>2) Who is the main character in The Legend of Zelda?</p>
+            <input id="q2" placeholder="Enter your answer...">
+            <button onclick="check('q2', 'link')">Answer!</button>
+        </div>
+
+        <div class="question">
+            <p>3) What does FPS stand for?</p>
+            <input id="q3" placeholder="Enter your answer...">
+            <button onclick="check('q3', 'first person shooter')">Answer!</button>
+        </div>
+
+        <div class="question">
+            <p>4) What company created the Xbox?</p>
+            <input id="q4" placeholder="Enter your answer...">
+            <button onclick="check('q4', 'microsoft')">Answer!</button>
+        </div>
+
+        <div class="question">
+            <p>5) What game features the phrase “Finish Him!”?</p>
+            <input id="q5" placeholder="Enter your answer...">
+            <button onclick="check('q5', 'mortal kombat')">Answer!</button>
+        </div>
+    </main>
+
+    <script>
+        function check(id, correct) {
+            let answer = document.getElementById(id).value.trim().toLowerCase();
+
+            if (answer === correct) {
+                alert("Correct >_< !");
+            } else {
+                alert("Wrong T^T..The correct answer is: " + correct);
+            }
+        }
+    </script>
+    <nav>
+        <a href="index.html">Return to Home</a>
+    </nav>
+</body>
+</html>

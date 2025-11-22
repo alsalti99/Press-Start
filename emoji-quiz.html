@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emoji Game</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f5f5f5; 
+        }
+
+        header {
+            background-image: url('images/emoji-quiz-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #444;
+        }
+
+        p {
+            text-align: center;
+            color: #444;
+            font-size:x-large;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .quiz-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 5px solid #444;
+        }
+
+        input {
+            padding: 8px;
+            width: 70%;
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background: #444;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Emoji Game</h1>
+        <p style="color: #f5f5f5; font-size: medium;">Look at the emojis and type the game name</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="timeless-games.html">Timeless Games</a>
+        <a href="console-legacy.html">Console Legacy</a>
+        <a href="pixel-on-the-go.html">Pixels on the Go</a>
+        <a href="retro-evolve.html">Retro Evolve</a>
+        <a href="games-geniuses.html">Game Geniuses</a>
+        <a href="fun-facts.html">Fun Facts</a>
+        <a href="game-challenge.html">Game Challenge!</a>
+        <a href="game-dictionary.html">Game Dictionary</a>
+        <a href="mini-quiz.html">Mini Quiz</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <h2>Guess the Game..and have fun >_< !</h2>
+        <p style="font-size: medium;">Can you decode the emojis? Each puzzle represents a classic or iconic game!</p>
+        <br>
+        <div class="quiz-box">
+            <p>🎾⬅️➡️</p>
+            <input id="q1" placeholder="Your Answer">
+            <button onclick="check(1, 'pong')">Answer!</button>
+        </div>
+
+        <div class="quiz-box">
+            <p>🦔💨💨</p>
+            <input id="q2" placeholder="Your Answer">
+            <button onclick="check(2, 'sonic the hedgehog')">Answer!</button>
+        </div>
+
+        <div class="quiz-box">
+            <p>🪓🐒🌴</p>
+            <input id="q3" placeholder="Your Answer">
+            <button onclick="check(3, 'donkey kong')">Answer!</button>
+        </div>
+
+        <div class="quiz-box">
+            <p>🏰⭐👨‍🔧🍄</p>
+            <input id="q4" placeholder="Your Answer">
+            <button onclick="check(4, 'super mario')">Answer!</button>
+        </div>
+
+        <div class="quiz-box">
+            <p>😈🔫🔥</p>
+            <input id="q5" placeholder="Your Answer">
+            <button onclick="check(5, 'doom')">Answer!</button>
+        </div>
+
+        <div class="quiz-box">
+            <p>🌀🚪🧠</p>
+            <input id="q6" placeholder="Your Answer">
+            <button onclick="check(6, 'portal')">Answer!</button>
+        </div>
+
+        <div class="quiz-box">
+            <p>🧟‍♂️🔫🏡</p>
+            <input id="q7" placeholder="Your Answer">
+            <button onclick="check(7, 'resident evil')">Answer!</button>
+        </div>
+
+        <div class="quiz-box">
+            <p>⛏️🌍🧱</p>
+            <input id="q8" placeholder="Your Answer">
+            <button onclick="check(8, 'minecraft')">Answer!</button>
+        </div>
+
+        <div class="quiz-box">
+            <p>🩸🐺⚔️</p>
+            <input id="q9" placeholder="Your Answer">
+            <button onclick="check(9, 'bloodborne')">Answer!</button>
+        </div>
+
+        <div class="quiz-box">
+            <p>🐎🌄🔫</p>
+            <input id="q10" placeholder="Your Answer">
+            <button onclick="check(10, 'red dead redemption')">Answer!</button>
+        </div>
+
+        <div class="quiz-box">
+            <p>🥷⚔️🌙</p>
+            <input id="q11" placeholder="Your Answer">
+            <button onclick="check(11, 'sekiro')">Answer!</button>
+        </div>
+
+    </main>
+
+    <script>
+        function check(num, correct) {
+            let input = document.getElementById("q" + num).value.toLowerCase().trim();
+            if (input === correct) {
+                alert("Correct >_< !");
+            } else {
+                alert("Wrong T^T..The correct answer is: " + correct);
+            }
+        }
+    </script>
+    <nav>
+        <a href="index.html">Return to Home</a>
+    </nav>
+</body>
+</html>
