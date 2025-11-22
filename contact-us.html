@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-image: url('images/contact-us-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 125px;
+            text-align: center;
+        }
+
+        .intro {
+            text-align: center;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-box {
+            background-color: rgba(248, 248, 248, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #555;
+            text-align: center;
+        }
+
+        .form-group {
+            margin: 15px 0;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .form-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            background: #444;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background: #222;
+        }
+
+        .email {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .email a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .email a:hover {
+            color: #0072ff;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Contact Us</h1>
+        <div class="intro">We're always happy to hear from you</div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="timeless-games.html">Timeless Games</a>
+        <a href="console-legacy.html">Console Legacy</a>
+        <a href="pixel-on-the-go.html">Pixels on the Go</a>
+        <a href="retro-evolve.html">Retro Evolve</a>
+        <a href="games-geniuses.html">Game Geniuses</a>
+        <a href="fun-facts.html">Fun Facts</a>
+        <a href="game-challenge.html">Game Challenge!</a>
+        <a href="about-us.html">About Us</a>
+    </nav>
+
+    <main>
+        <div class="section-box">
+            <h2>Get in Touch</h2>
+            <h3>Have questions or feedback?</h3>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" maxlength="50" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cc">Email Address:</label>
+                    <input type="text" id="cc" name="cc" maxlength="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Subject">Subject:</label>
+                    <input type="text" id="Subject" name="Subject" maxlength="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="body">Your Message:</label>
+                    <textarea id="body" name="body" maxlength="150" placeholder="Enter your feedback here..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="groceries">How would you rate your experience with our site project?</label>
+                    <select id="groceries" name="groceries" required>
+                        <option value="">-- Please select --</option>
+                        <option value="1">Excellent, I’m very happy with this site</option>
+                        <option value="2">Good, but I have some feedback</option>
+                        <option value="3">Bad, (It is recommended to write a feedback)</option>
+                    </select>
+                </div>
+
+                <input type="hidden" name="email" value="info.pressstart.team@gmail.com">
+
+                <div class="form-buttons">
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Clear Form">
+                </div>
+            </form>
+            <br>
+            <div class="email">
+                <p>Our Email:</p>
+                <a href="mailto:info.pressstart.team@gmail.com">info.pressstart.team@gmail.com</a>
+            </div>
+
+        </div>
+    </main>
+
+    <nav>
+        <a href="index.html">Return to Home</a>
+    </nav>
+
+</body>
+</html>

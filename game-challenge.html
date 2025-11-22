@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Challenge!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-image: url('images/GameChallengeBG.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 125px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .game-box {
+            background: rgba(248, 248, 248, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #444;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #333;
+        }
+
+        #feedbackMessage {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Game Challenge!</h1>
+        <div class="intro">
+            Unscramble the gaming word!
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="timeless-games.html">Timeless Games</a>
+        <a href="console-legacy.html">Console Legacy</a>
+        <a href="pixel-on-the-go.html">Pixels on the Go</a>
+        <a href="retro-evolve.html">Retro Evolve</a>
+        <a href="games-geniuses.html">Game Geniuses</a>
+        <a href="fun-facts.html">Fun Facts</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <h2>Can you guess the correct gaming term from the scrambled letters?</h2>
+        <div class="game-box">
+            <p id="gameMessage" style="font-size: 22px; font-weight: bold;"></p>
+
+            <input id="userGuess" type="text" placeholder="Your guess here...">
+            <br>
+
+            <button id="submitGuess">Submit</button>
+            <button id="nextTerm" style="display:none;">Next Word</button>
+
+            <p id="feedbackMessage"></p>
+        </div>
+    </main>
+
+    <script>
+        const terms = ["console", "playstation", "pixel", "arcade", "controller", "multiplayer", "gamer"];
+
+        let currentTerm = "";
+
+        function scramble(word) {
+            return word.split("").sort(() => Math.random() - 0.5).join("");
+        }
+
+        function newWord() {
+            currentTerm = terms[Math.floor(Math.random() * terms.length)];
+            document.getElementById("gameMessage").textContent =
+                "Scrambled Word: " + scramble(currentTerm);
+            
+            document.getElementById("feedbackMessage").textContent = "";
+            document.getElementById("userGuess").value = "";
+            document.getElementById("submitGuess").style.display = "inline-block";
+            document.getElementById("nextTerm").style.display = "none";
+        }
+
+        document.getElementById("submitGuess").onclick = function() {
+            const guess = document.getElementById("userGuess").value.toLowerCase().trim();
+            if (guess === currentTerm.toLowerCase()) {
+                document.getElementById("feedbackMessage").textContent = "Correct >_<! WOW";
+                document.getElementById("submitGuess").style.display = "none";
+                document.getElementById("nextTerm").style.display = "inline-block";
+            } else {
+                document.getElementById("feedbackMessage").textContent = "Try again!";
+            }
+        };
+
+        document.getElementById("nextTerm").onclick = newWord;
+
+        newWord();
+    </script>
+
+    <nav>
+        <a href="index.html">Return to Home</a>
+    </nav>
+
+</body>
+</html>
