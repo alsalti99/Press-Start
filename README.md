@@ -26,7 +26,7 @@ The website contains multiple themed pages, each covering a specific aspect of g
 - **Game Challenge!** – Simple interactive game activity  
 - **Game Dictionary** – Basic gaming terms and definitions  
 - **Mini Quiz** – Small quiz page with alert-based answers  
-- **Emoji Guessing Game** – Guess game titles using emoji clues  
+- **Emoji Game** – Guess game titles using emoji clues  
 - **About Us** – Project and Developer informations  
 - **Contact Us** – Contact form for user feedback
 
