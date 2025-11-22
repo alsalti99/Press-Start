@@ -1,8 +1,7 @@
 # Press Start!
 
-**Project Name:** Press Start  
 **Developer:** Omar Al Salti  
-**Hosted Website:** https://press-start-now.vercel.app/
+**Website link:** https://press-start-now.vercel.app/
 
 ---
 
