@@ -3,7 +3,7 @@
 <div class="highlight">
   <strong>Project Name:</strong> Press Start<br>
   <strong>Developer:</strong> Omar Al Salti
-  <br><strong>Hosted Website link:</strong>
+  <br><strong>Hosted Website link:</strong> https://press-start-now.vercel.app/
 </div>
 
 ## Website Overview
