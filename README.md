@@ -5,14 +5,14 @@
 
 ---
 
-## 📘 Overview
+## Overview
 
 **Press Start** is a project website that explores the history of video games, from classic consoles to iconic creators who shaped the industry.  
 The project aims to be fun, informative, and visually engaging!
 
 ---
 
-## 📂 Website Structure
+## Website Structure
 
 The website contains multiple themed pages, each covering a specific aspect of gaming history:
 
@@ -32,7 +32,7 @@ The website contains multiple themed pages, each covering a specific aspect of g
 
 ---
 
-## 🛠️ Technical Implementation
+## Technical Implementation
 
 This project is built using:
 
@@ -42,7 +42,7 @@ This project is built using:
 
 ---
 
-## 🚀 Features
+## Features
 
 - Simple and easy to interact design
 - Navigation across all pages for easy switching
@@ -52,7 +52,7 @@ This project is built using:
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 Planned upgrades for future versions:
 
@@ -66,6 +66,6 @@ Planned upgrades for future versions:
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 
 **Press Start** showcases the evolution of gaming and demonstrates core web development knowledge through a multi-page, visually fun website. It blends creativity with foundational HTML/CSS/JS skills.
