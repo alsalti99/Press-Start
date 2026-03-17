@@ -61,7 +61,7 @@ Planned upgrades for future versions:
 - Add **user-generated content** (reviews, comments, ratings)  
 - Implement **server-side PHP** for forms and dynamic features  
 - Add a search bar so users can find gaming info easily.
-- Make the site more mobile-friendly
+- Make the site more mobile-friendly!
   
 
 ---
